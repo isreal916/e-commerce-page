@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit="yes"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title> E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body id="bodie">
+<header>
+  <div  id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">Collection</a>
+    <a href="#">Men</a>
+    <a href="#">Women</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div><span id="hamburger"  onclick="openNav()">☰ </span><h1>Sneakers</h1>
+ <ul>
+  <li>Collection</li>
+  <li>Men</li>
+  <li>Woman</li>
+  <li>About</li>
+  <li>Contact</li>
+
+</ul>
+<div class="head-img"><img src="images/image-avatar.png" alt=""> <span id="notification">3</span><img id="cart" src="images/icon-cart.svg" alt="">
+ 
+  </div>
+ 
+</header>
+<div class="drop-content">
+  <h3>Cart</h3>
+  <hr>
+  <h4 id="empty">Your cart is empty</h4>
+  <div class="carts">
+  <div class="flex">  <img style="width:35px ;height:35px" src="images/image-product-1-thumbnail.jpg  " alt="">
+ <div class="flex-2">  <div> <p>Fall Limited Edition sneakers</p></div>
+ <div id="text">  <br> $<p id="normal">125.00 </p><p>x</p><p id="number"></p>&nbsp; <p id="equal"><strong>$375.00</strong></p> </div></div>
+   <img id="delete" src="images/icon-delete.svg" alt=""></div>
+    <button id="add">checkout</button>
+  </div>
+</div>
+<div class="main-container">
+  <div class="img-showcase">
+<section >
+  <div class="image-show">
+    <img id="image" src="images/image-product-1.jpg" alt="">
+  </div>
+  <div class="image-tab">
+    <img src="images/image-product-1-thumbnail.jpg" alt="" id="tab">
+    <img src="images/image-product-2-thumbnail.jpg" alt="" id="tab">
+    <img src="images/image-product-3-thumbnail.jpg" alt="" id="tab">
+    <img src="images/image-product-4-thumbnail.jpg" alt="" id="tab">
+  </div>
+
+</section>
+</div>
+<section id="description">
+  <h3> Sneaker Company</h3>
+  <h1> Fall Limited Edition <br>
+    Sneakers</h1>
+    <p> These low-profile sneakers are your perfect casual wear <br> companion. Featuring a 
+      durable rubber outer sole, they’ll <br> withstand everything the weather can offer.</p>
+      <div id="price"><h2>$125.00</h2>
+      <div id="discount">50%</div>
+     
+    </div>
+    <h4 id="recent">$250.00</h4>
+    <div class="quantity"><div id="plus-minus"><img id="minus" src="images/icon-minus.svg" alt=""><p id="quan">0</p><img id="plus" src="images/icon-plus.svg" alt=""></div>
+    <div id="add-to-cart">
+      <button id="add"><img style="color:white" src="images/icon-cart.svg" alt="">Add to cart</button>
+    </div>
+  </div>
+</section>
+ 
+</div>
+ 
+
+<div style="z-index:4;position: absolute;margin:230px 0 0 390px;display:none" class="img-showcases">
+  <img id="close" src="images/icon-close.svg" alt="">
+  <section >
+    <div class="image-show">
+     <img id="prev" onclick="plusSlides(-1)" src="images/icon-previous.svg" alt="" > 
+     <img class ="image" src="images/image-product-1.jpg" alt="">
+     <img src="images/icon-next.svg" alt="" id="next" onclick="plusSlides(-1)">
+     <img src="images/image-product-2.jpg" alt="" class="image">
+     <img src="images/image-product-3.jpg" alt="" class="image">
+     <img src="images/image-product-4.jpg" alt="" class="image">
+    </div>
+    <div class="image-tab">
+      <img src="images/image-product-1-thumbnail.jpg" alt="" class="tabs">
+      <img src="images/image-product-2-thumbnail.jpg" alt="" class="tabs">
+      <img src="images/image-product-3-thumbnail.jpg" alt="" class="tabs">
+      <img src="images/image-product-4-thumbnail.jpg" alt="" class="tabs">
+    </div>
+  
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script  src="jquery-1.8.3.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
